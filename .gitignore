@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.claude/
+
+# Large model checkpoint -- re-downloaded automatically via hf_hub_download
+# in infer.py / infer_pysbd.py if not present locally (see models/ handling).
+models/InLegalBERT_i.safetensors
+models/*.log
+
+# Raw source judgments -- not included in this repo; supply your own CSV
+# with judgment_id, full_text columns to run the pipeline.
+judgment_full_texts_ankit
